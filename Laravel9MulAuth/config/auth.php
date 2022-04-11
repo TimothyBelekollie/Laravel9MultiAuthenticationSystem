@@ -68,7 +68,7 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],
-         'admins' => [
+        'admins' => [
             'driver' => 'eloquent',
             'model' => App\Models\Admin::class,
         ],
@@ -76,9 +76,9 @@ return [
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',
-        //     ],
-       
- ],
+        // ],
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Resetting Passwords
@@ -96,7 +96,7 @@ return [
 
     'passwords' => [
         'users' => [
-            'provider' => 'admins',
+            'provider' => 'users',
             'table' => 'password_resets',
             'expire' => 60,
             'throttle' => 60,
@@ -121,4 +121,5 @@ return [
     */
 
     'password_timeout' => 10800,
+
 ];
